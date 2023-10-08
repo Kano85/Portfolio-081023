@@ -6,11 +6,6 @@
     >
       <div class="flex items-center justify-between">
         <div class="relative w-16 h-16">
-          <img
-            class="rounded-full border border-gray-100 shadow-sm"
-            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=512&h=512&q=80"
-            alt="user image"
-          />
         </div>
         <!-- Mobile menu button -->
         <div @click="showMenu = !showMenu" class="flex md:hidden">
@@ -35,7 +30,7 @@
         <li class="menu-button"><a href="#">Home</a></li>
         <li class="menu-button"><a href="#work" v-smooth-scroll>Works</a></li>
         <li class="menu-button">
-          <a href="#testimonial" v-smooth-scroll>Testimonials</a>
+          <a href="#testimonial" v-smooth-scroll>Links</a>
         </li>
         <li class="menu-button"><a href="#about" v-smooth-scroll>About</a></li>
       </ul>
@@ -52,17 +47,25 @@
         <h1
           class="3xl:text-8xl 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-Eczar font-bold leading-tight text-gray-700"
         >
-          It's
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.xing.com/profile/Harold_Cano"
             target="_blank"
             class="text-black hover:underline"
           >
-            Aliza Khan</a
-          >🙇‍♀️<br />Creative Designer and Storyteller
+            Harold Cano </a
+          ><br />UXUI Designer
         </h1>
 
-        <div class="md:flex gap-1 md:gap-10">
+        
+      </div>
+
+      <div class="w-8/12 flex justify-end">
+      </div>
+    </div>
+  </div>
+ <!-- Start my recent work -->
+  <div class="banner-2 space-y-10 pb-20" id="work">
+    <div class="md:flex gap-1 md:gap-10">
           <button class="text-white bg-gray-800 submit-button hidden md:block">
             View My Work
           </button>
@@ -72,40 +75,33 @@
             Contact Me
           </button>
         </div>
-      </div>
-
-      <div class="w-8/12 flex justify-end">
-        <!-- <img
-          class="3xl:h-[800px] 2xl:h-[650px] xl:h-[550px] lg:h-[550px] md:h-[450px] sm:h-[350px]"
-          src="./assets/profile-female.png"
-          alt="user image"
-        /> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="banner-2 space-y-10 pb-20" id="work">
     <h3 class="heading3 my-5">My Recent Work</h3>
     <div class="card">
-      <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-        <h4 class="project-title item">Sheepify States</h4>
-        <p class="font-work_sans pr-12">
-          Designed some empty state screens in kawaii style for the popular
-          sheepify app.Tailwind lets you conditionally apply utility classes in
-          different states using variant modifiers. For example, use hover:gap-6
-          to only apply the gap-6 utility
-        </p>
-        <button class="text-sky-800 font-bold text-2xl tracking-wider">
-          View Case Study
-        </button>
-      </div>
-      <div class="card-image bg-green-100">
-        <img
-          class="object-cover w-full h-72 md:h-96"
-          src="./assets/project1.png"
-        />
-      </div>
+  <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
+    <h4 class="project-title item">Project 1</h4>
+    <p class="font-work_sans pr-12">
+      Project description
+    </p>
+    <div class="space-x-4"> <!-- Added a div with space-x-4 class for horizontal spacing -->
+      <button class="text-sky-800 font-bold text-2xl tracking-wider">
+        Figma
+      </button>
+      <button class="text-sky-800 font-bold text-2xl tracking-wider">
+        Behance
+      </button>
+      <button class="text-sky-800 font-bold text-2xl tracking-wider">
+        Pdf
+      </button>
     </div>
+  </div>
+  <div class="card-image bg-green-100">
+    <img
+      class="object-cover w-full h-72 md:h-96"
+      src="./assets/KPL1550.png"
+    />
+  </div>
+</div>
+
 
     <div class="card">
       <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
@@ -149,7 +145,8 @@
       </div>
     </div>
   </div>
-
+ <!-- End my recent work-->
+<!-- Mobile menu button -->
   <div class="banner-1" id="testimonial">
     <div class="space-y-4 grid place-items-center mt-5">
       <h3 class="heading3">Some Generous Words</h3>
@@ -249,19 +246,15 @@
   <div class="banner-2 md:flex items-center md:justify-evenly" id="about">
     <img
       class="md:h-[500px] h-[400px]"
-      src="./assets/about-female.png"
+      src="./assets/Photo-about.jpg"
       alt="user image"
     />
     <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
-      <h4 class="project-title item">Sheepify States</h4>
+      <h4 class="project-title item">About me</h4>
       <p class="font-work_sans">
-        I am Salman Khan from Lucknow, India. I am working in an Indian Startup
-        as a User Eperience Designer for the past two years.
+        Description 1
         <br />
-        I got featured various times on many big and small marketplaces,
-        portfolio websites and blogs. I also received some awards and
-        recognitions from some of the big and small award companies. Besides
-        designing, I like to watch anime, read books and solve sudoku.
+        Description 2
       </p>
       <button class="text-sky-800 font-bold text-2xl tracking-wider">
         View Case Study
@@ -385,7 +378,7 @@
 }
 </style>
 <script>
-import imageUrl from '@/assets/DSC_8648.jpg';  // Import the image as a URL
+import imageUrl from '@/assets/Photo-main.jpg';  // Import the image as a URL
 
 export default {
   data() {
